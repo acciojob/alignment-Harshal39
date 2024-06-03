@@ -5,57 +5,77 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<title>HTML Assignment 3</title>
+<style>
+  .middle {
+    border: 1px solid rgb(0, 0, 0);
+    border-spacing: 1px;
+    padding: 1px;
+  }
+  .green {
+    background-color: green;
+  }
+  .blue {
+    background-color: blue;
+  }
+</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>HTML Assignment #3</h1>
-	<table id="table-1" class="middle" border="1px solid rgb(0,0,0)" cell-spacing="1px" cell-padding="1px">
+	<h1 style="text-align: center;">HTML Assignment #3</h1>
+
+<h2>Table 1</h2>
+<table id="table-1" class="middle">
   <tr>
-    <td id="t11" class="center">left</td>
-    <td id="t12" class="center">center</td>
-    <td id="t13" class="right">right</td>
+    <td id="t11" class="middle">Row 1, Column 1</td>
+    <td id="t12" class="center">Row 1, Column 2</td>
+    <td id="t13" class="right">Row 1, Column 3</td>
   </tr>
   <tr>
-    <td class="center">left</td>
-    <td class="center">center</td>
-    <td class="right">right</td>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+    <td class="right">Row 2, Column 3</td>
   </tr>
-  <tr>
-    <td class="center">left</td>
-    <td class="center">center</td>
-    <td class="right">right</td>
+  <tr class="center">
+    <td>Row 3, Column 1</td>
+    <td>Row 3, Column 2</td>
+    <td class="right">Row 3, Column 3</td>
   </tr>
 </table>
 
-	<table id="table-2" class="middle" border="1px solid black" cell-spacing="1px" cell-padding="1px">
+<h2>Table 2</h2>
+<table id="table-2" class="middle">
   <tr>
-    <td id="t21" colspan="6" class="center">First Cell</td>
+    <td id="t21" colspan="6">Row 1, spanning all columns</td>
   </tr>
   <tr>
-    <td class="center">Column 1</td>
-    <td class="center">Column 2</td>
-    <td class="center">Column 3</td>
-    <td class="center">Column 4</td>
-    <td class="center">Column 5</td>
-    <td class="center">Column 6</td>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+    <td>Row 2, Column 3</td>
+    <td>Row 2, Column 4</td>
+    <td>Row 2, Column 5</td>
+    <td class="right">Row 2, Column 6</td>
   </tr>
-  <!-- Additional rows here -->
+  <!-- Add more rows if needed -->
 </table>
 
-	<table id="table-3" class="middle" border="1px solid black" cell-spacing="1px" cell-padding="1px">
-  <tr>
-    <td class="green" colspanspan=6>Row 1</td>
-	  
+<h2>Table 3</h2>
+<table id="table-3" class="middle">
+  <tr class="green">
+    <td colspan="2">Green Row 1, spanning 2 columns</td>
   </tr>
   <tr>
-    <td id="t-image" class="center" colspan=6>
-      <img src="https://example.com/image.jpg" alt="Image">
+    <td id="t-image" colspan="2">
+      <img src="image_url_here" alt="Description of Image">
     </td>
-    
   </tr>
-  <tr>
-    <td class="blue" colspan=6>Row 3</td>
+  <tr class="blue">
+    <td colspan="2">Blue Row 3, spanning 2 columns</td>
   </tr>
+</table>
+
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
